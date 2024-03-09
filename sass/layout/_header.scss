@@ -1,63 +1,72 @@
-.header-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.navigation-list-item-link-current::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 70px;
-    height: 4px;
-    border-radius: 2px;
-    margin-bottom: -33px;
-    background-color: $color-blue;
-}
-.navigation-list-item-link-current {
-    position: relative;
+.header {
+    background-color: $color-footer-info;
+    padding: 24px 0;
+    min-height: 80px;
+    width: 100%;
 
+    border-bottom: 1px solid #ECECEC;
+
+    &-logo {
+        @include fontstyles(Roboto, 26px, 700, 31px, 0.03em, left, $color-black);
+    }
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
-.header-navigation-list {
+
+.contacts-list {
     display: flex;
     gap: 50px;
+    margin-left: auto;
+
+    &-item {
+        @include fontstyles(Roboto, 14px, 500, 16px, 0.02em, left, $color-p);
+        &:hover {
+            @extend %hover-element;
+        }
+    }
+    &-link{
+        color: #757575;
+    }
+    &-link-svg {
+        color: currentColor;
+        &-use{
+            fill: #757575;
+        }
+    }
+
 }
 
-.header-list {
+.navigation-list {
     display: flex;
-    gap: 30px;
-}
+    gap: 50px;
+    padding-left: 40px;
 
-.header {
-    padding: 24px 0;
-    border: 1px solid #ECECEC;
-}
+    &-item {
+        @include fontstyles(Roboto, 14px, 500, 16px, 0.02em, left, $color-p);
 
-.header-list-link {
-    color: #757575;
-}
+        &-link {
+            @include fontstyles(Raleway, 14px, 500, 16px, 0.03em, left, $color-black);
+        }
 
-.header-link {
-    font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    color: var(--color-black);
+        &-link-current {
+            position: relative;
+            font-family: Roboto;
 
-}
-
-.header-navigation-list-item {
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    text-align: left;
-
-}
-
-.header-navigation-list-link {
-    color: $color-black;
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 4px;
+                border-radius: 2px;
+                margin-bottom: -33px;
+                background-color: $color-blue;
+            }
+        }
+    }
 }

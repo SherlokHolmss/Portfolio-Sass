@@ -1,6 +1,9 @@
 @import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./abstracts/placeholders";
 @import "./components/container";
 @import "./base/reset";
+@import "./components/span";
 @import "./components/overlay";
 @import "./layout/header";
 @import "./layout/hero";

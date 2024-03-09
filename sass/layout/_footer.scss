@@ -106,6 +106,7 @@
 
     }
 }
+
 .footer-form-button-text {
     font-family: Roboto;
     font-size: 16px;
@@ -114,6 +115,7 @@
     letter-spacing: 0.06em;
     color: $color-section-hero;
 }
+
 .address-list-link {
     font-size: 14px;
     font-weight: 400;
@@ -123,6 +125,7 @@
     color: $color-footer-info;
     text-decoration: none;
 }
+
 .footer-link {
     font-family: Raleway;
     font-size: 26px;
@@ -131,4 +134,28 @@
     letter-spacing: 0.03em;
     text-align: left;
     color: #FFFFFF;
+}
+
+.footer-address-item-address {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.footer-info {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #FFFFFF;
+    opacity: 60%;
+}
+.footer-form-svg{
+    fill: #FFFFFF;
 }

@@ -1,0 +1,30 @@
+.overlay-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay-text {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    top: 0;
+    left: 0;
+    color: #FFFFFF;
+    background-color: $color-blue;
+    position: absolute;
+    padding: 64px 24px 0 24px;
+    max-width: 370px;
+    height: 294px;
+    opacity: 0.9;
+    transform: translateY(100%);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+.portfolio-list-link{
+    color: #212121;
+}
+.portfolio-list-link:hover .overlay-text {
+    transform: translateY(0);
+
+}

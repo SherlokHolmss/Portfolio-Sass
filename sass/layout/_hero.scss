@@ -1,0 +1,68 @@
+
+.filter-list-button-content {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.filter-list-button {
+
+    padding: 6px 22px;
+    border-radius: 4px;
+}
+
+.filter-list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    padding-left: 0;
+}
+
+.portfolio-list-title {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    padding: 0 24px 4px 24px;
+}
+
+.section-hero {
+    margin-bottom: 94px;
+}
+
+.portfolio-list-img {
+    width: 370px;
+    height: 294px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 30px;
+    padding-left: 0;
+}
+
+.portfolio-list-item {
+    border-radius: 0px 0px 1px 1px;
+    outline: 1px solid #EEEEEE;
+    width: 370px;
+    height: 404px;
+}
+
+.portfolio-list-description {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    padding: 0 24px 0 24px;
+}
